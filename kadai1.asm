@@ -7,9 +7,9 @@ TRISB   EQU     H'86'
         BSF     STATUS,RP0  ; ぺーじを１にする
         CLRF    TRISB       ; ledをぜんぶ出力モードにする
         BCF     STATUS,RP0  ; ぺーじを０にする
-LOOP    MOVLW   B'01010101' ; 偶数番目をひからせる
+LOOP    MOVLW   B'10101010' ; 奇数番目をひからせる
         MOVWF   PORTB       ; PORTBへ転送
-        MOVLW   B'10101010' ; 奇数番目をひからせる
+        MOVLW   B'01010101' ; 偶数番目をひからせる
         MOVWF   PORTB       ; PORTBへ転送
         GOTO    LOOP        ; くるくる
         END

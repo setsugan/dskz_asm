@@ -1,4 +1,4 @@
-        LIST    P=16F84A,R=DEC
+        LIST    P=16F84A,R=DEC 
 STATUS  EQU     3               
 RP0     EQU     5               
 PORTB   EQU     6               
