@@ -9,13 +9,13 @@ TRISB   EQU     H'86'
         BCF     STATUS,RP0      ; ぺーじを０にする
         MOVLW   B'00000001'     ; led 0
         MOVWF   PORTB           ; PORTBへ転送
-        MOVLW   B'00000010'     ; led 1
+        MOVLW   B'00000011'     ; led 1
         MOVWF   PORTB           ; PORTBへ転送
-        MOVLW   B'00000100'     ; led 2
+        MOVLW   B'00000111'     ; led 2
         MOVWF   PORTB           ; PORTBへ転送
-        MOVLW   B'00001000'     ; led 3
+        MOVLW   B'00001111'     ; led 3
         MOVWF   PORTB           ; PORTBへ転送
-        MOVLW   B'00010000'     ; led 4
+        MOVLW   B'00011111'     ; led 4
         MOVWF   PORTB           ; PORTBへ転送
         MOVLW   B'00100000'     ; led 5
         MOVWF   PORTB           ; PORTBへ転送

@@ -21,7 +21,7 @@ LOOP    MOVLW   B'00111111' ; 0を表示する
         MOVWF   PORTB
         MOVLW   B'01111101' ; 6を表示する
         MOVWF   PORTB
-        MOVLW   B'00000111' ; 7を表示する
+        MOVLW   B'00100111' ; 7を表示する
         MOVWF   PORTB
         MOVLW   B'01111111' ; 8を表示する
         MOVWF   PORTB
